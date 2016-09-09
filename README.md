@@ -6,4 +6,4 @@
 - gulp-sass
 - node-sass
 
-2. run gulp sass:watch for sass updates
+2. run `gulp sass:watch` for sass updates
