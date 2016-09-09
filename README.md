@@ -1,9 +1,9 @@
 # angular-rest-architecture
 
-1. installs:
+**installs:**
 
-- gulp
-- gulp-sass
-- node-sass
+1. gulp
+2. gulp-sass
+3. node-sass
 
-2. run `gulp sass:watch` for sass updates
+run `gulp sass:watch` for sass updates
