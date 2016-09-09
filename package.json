@@ -1,0 +1,30 @@
+{
+  "name": "architecture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "jquery": "^3.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "node-sass": "^3.9.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tomasz Zarnowiec",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomaszzarnowiec/angular-rest-architecture.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tomaszzarnowiec/angular-rest-architecture/issues"
+  },
+  "homepage": "https://github.com/tomaszzarnowiec/angular-rest-architecture#readme"
+}

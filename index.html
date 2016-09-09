@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="s200App">
+    <head>
+        <meta charset="utf-8">
+        <title>Architecture</title>
+        <link rel="stylesheet" href="style/css/style.css">
+    </head>
+    <body ng-controller="MainController">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-2 menu">
+                    <ul>
+                        <li><a href="#/about">About</a></li>
+                        <li><a href="#/projects">Projects</a></li>
+                        <li><a href="#/users">Users</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-10">
+                    <ng-view></ng-view>
+                </div>
+            </div>
+        </div>
+
+        <script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+        <script src="libs/bootstrap3/bootstrap.js" charset="utf-8"></script>
+        <script src="node_modules/angular/angular.min.js" charset="utf-8"></script>
+        <script src="node_modules/angular-route/angular-route.js" charset="utf-8"></script>
+
+        <script type="text/javascript">
+            (function() {
+                'use strict';
+                var s200 = angular.module("s200App", [
+                    'ngRoute',
+                    // app modules
+                    'aboutModule',
+                    'projectsModule',
+                    'usersModule'
+                ]);
+            })();
+        </script>
+
+        <script src="app/config.js" charset="utf-8"></script>
+
+        <!-- modules -->
+        <script src="app/about/about.module.js" charset="utf-8"></script>
+        <script src="app/projects/projects.module.js" charset="utf-8"></script>
+        <script src="app/users/users.module.js" charset="utf-8"></script>
+
+        <!-- controllers -->
+        <script src="app/main/controllers/main.controller.js" charset="utf-8"></script>
+        <script src="app/about/controllers/about.controller.js" charset="utf-8"></script>
+        <script src="app/projects/controllers/projects.controller.js" charset="utf-8"></script>
+        <script src="app/users/controllers/users.controller.js" charset="utf-8"></script>
+    </body>
+</html>
